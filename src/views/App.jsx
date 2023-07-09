@@ -12,9 +12,9 @@ class App extends Component {
       <HashRouter>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route exact path="/layout" name="Layout" element={<Layout />} />
+            <Route exact path="/login" element={<Login />} />
             <Route exact path="/regist" name="Regist" element={<Regist />} />
-            <Route path="*" element={<Login />} />
+            <Route exact path="*" name="Layout" element={<Layout />} />
           </Routes>
         </Suspense>
       </HashRouter>
