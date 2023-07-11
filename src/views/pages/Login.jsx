@@ -41,7 +41,7 @@ const Login = () => {
   
           <div className="d-flex justify-content-between">
             <Button type="submit">Login</Button>
-            <Link to="/layout" className="btn btn-info">Layout</Link>
+            <Link to="/app" className="btn btn-info">Layout</Link>
             <Link to="/regist" className="btn btn-primary">Regist</Link>
           </div>
         </Form>

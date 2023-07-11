@@ -5,7 +5,7 @@ const _nav = [
     {
       type: "NavItem",
       name: "Dashboard",
-      to: "/dashboard",
+      to: "/app/dashboard",
       icon: <FaBook className="sidebar-icon" />,
       badge: {
         color: "info",
@@ -15,41 +15,41 @@ const _nav = [
     {
       type: "NavGroup",
       name: "Komik",
-      to: "/komik",
+      to: "/app/komik",
       icon: <FaBook className="sidebar-icon" />,
       items: [
         {
           type: "NavItem",
           name: "Manhwa",
-          to: "/komik/manhwa",
+          to: "/app/komik/manhwa",
         },
         {
           type: "NavItem",
           name: "Manhua",
-          to: "/komik/manhua",
+          to: "/app/komik/manhua",
         },
         {
           type: "NavItem",
           name: "Manga",
-          to: "/komik/manga",
+          to: "/app/komik/manga",
         },
       ],
     },
     {
       type: "NavGroup",
       name: "Film",
-      to: "/film",
+      to: "/app/film",
       icon: <FaFilm className="sidebar-icon" />,
       items: [
         {
           type: "NavItem",
           name: "Movie",
-          to: "/film/movie",
+          to: "/app/film/movie",
         },
         {
           type: "NavItem",
           name: "Series",
-          to: "/film/series",
+          to: "/app/film/series",
         },
       ],
     },

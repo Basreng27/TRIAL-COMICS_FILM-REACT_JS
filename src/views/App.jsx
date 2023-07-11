@@ -1,5 +1,5 @@
 import React, { Component, Suspense } from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Loading } from "../components";
 import Layout from "./layout/Layout";
 
@@ -9,15 +9,15 @@ const Regist = React.lazy(() => import("./pages/Regist"));
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter>
         <Suspense fallback={<Loading />}>
           <Routes>
-            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/" element={<Login />} />
             <Route exact path="/regist" name="Regist" element={<Regist />} />
-            <Route exact path="*" name="Layout" element={<Layout />} />
+            <Route path="/app/*" name="Layout" element={<Layout />} />
           </Routes>
         </Suspense>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }
