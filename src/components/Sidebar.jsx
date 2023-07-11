@@ -4,6 +4,7 @@ import { Nav } from 'react-bootstrap';
 import { SidebarNav } from './SidebarNav';
 
 import navigation from '../config/_nav'
+import { FaChevronLeft } from 'react-icons/fa';
 
 function Sidebar() {
   return (
@@ -16,7 +17,9 @@ function Sidebar() {
         <SidebarNav items={navigation} />
       </Nav>
 
-      <div className="sidebar-footer">Footer</div>
+      <div className="sidebar-footer">
+        <FaChevronLeft />
+      </div>
     </>
   );
 }

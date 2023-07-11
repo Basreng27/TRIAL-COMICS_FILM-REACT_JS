@@ -30,8 +30,13 @@ body {
 }
 
 .footer {
+  font-size: 12px;
   background-color: #333;
   height: 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2%;
 }
 
 /* Sidebar */
@@ -113,7 +118,11 @@ body {
   font-weight: bold;
   margin-top: auto;
   height: 5%;
-  background-color: #212121
+  background-color: #212121;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
 }
 
 /* Navbar */

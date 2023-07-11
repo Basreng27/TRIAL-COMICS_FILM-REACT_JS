@@ -1,11 +1,7 @@
 import React from 'react'
 
 const Footer=()=> {
-  return (
-    <div>
-      INI FOOTER
-    </div>
-  )
+  return 'Created @Rayandra WM'
 }
 
 export default Footer
