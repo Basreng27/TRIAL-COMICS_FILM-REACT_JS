@@ -37,7 +37,7 @@ const _nav = [
     },
     {
       type: "NavGroup",
-      name: "Komik",
+      name: "Film",
       to: "/film",
       icon: <FaFilm className="sidebar-icon" />,
       items: [

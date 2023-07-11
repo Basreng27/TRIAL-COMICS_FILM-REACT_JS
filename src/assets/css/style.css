@@ -115,3 +115,29 @@ body {
   height: 5%;
   background-color: #212121
 }
+
+/* Navbar */
+.custom-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left{
+  padding-left: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-right {
+  padding-right: 3%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}

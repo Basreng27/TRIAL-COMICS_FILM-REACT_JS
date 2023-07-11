@@ -6,12 +6,6 @@ import { SidebarNav } from './SidebarNav';
 import navigation from '../config/_nav'
 
 function Sidebar() {
-  // const [filmDropdownOpen, setFilmDropdownOpen] = useState(false);
-
-  // const toggleFilmDropdown = () => {
-  //   setFilmDropdownOpen(!filmDropdownOpen);
-  // };
-
   return (
     <>
       <div className="sidebar-header">
