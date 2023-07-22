@@ -12,40 +12,40 @@ const Index = () => {
             </Card.Header>
 
             <Card.Body>
-            <Row className="text-center">
-              <Col sm={4}>
-                <Card bg="secondary" text="white">
-                  <Card.Header>MANHWA</Card.Header>
+              <Row className="text-center">
+                <Col sm={4}>
+                  <Card bg="secondary" text="white">
+                    <Card.Header>MANHWA</Card.Header>
 
-                  <Card.Body>
-                    <Card.Title>TOTAL MANHWA</Card.Title>
-                    <Card.Text>70</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+                    <Card.Body>
+                      <Card.Title>TOTAL MANHWA</Card.Title>
+                      <Card.Text>70</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
 
-              <Col sm={4}>
-                <Card bg="success" text="white">
-                  <Card.Header>MANGA</Card.Header>
+                <Col sm={4}>
+                  <Card bg="success" text="white">
+                    <Card.Header>MANGA</Card.Header>
 
-                  <Card.Body>
-                    <Card.Title>TOTAL MANGA</Card.Title>
-                    <Card.Text>70</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+                    <Card.Body>
+                      <Card.Title>TOTAL MANGA</Card.Title>
+                      <Card.Text>70</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
 
-              <Col sm={4}>
-                <Card bg="warning" text="white">
-                  <Card.Header>MANHUA</Card.Header>
+                <Col sm={4}>
+                  <Card bg="warning" text="white">
+                    <Card.Header>MANHUA</Card.Header>
 
-                  <Card.Body>
-                    <Card.Title>TOTAL MANHUA</Card.Title>
-                    <Card.Text>70</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
+                    <Card.Body>
+                      <Card.Title>TOTAL MANHUA</Card.Title>
+                      <Card.Text>70</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
             </Card.Body>
           </Card>
         </Row>
@@ -57,29 +57,29 @@ const Index = () => {
             </Card.Header>
 
             <Card.Body>
-            <Row className="text-center">
-              <Col sm={6}>
-                <Card bg="primary" text="white">
-                  <Card.Header>MOVIE</Card.Header>
+              <Row className="text-center">
+                <Col sm={6}>
+                  <Card bg="primary" text="white">
+                    <Card.Header>MOVIE</Card.Header>
 
-                  <Card.Body>
-                    <Card.Title>TOTAL MOVIE</Card.Title>
-                    <Card.Text>70</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+                    <Card.Body>
+                      <Card.Title>TOTAL MOVIE</Card.Title>
+                      <Card.Text>70</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
 
-              <Col sm={6}>
-                <Card bg="danger" text="white">
-                  <Card.Header>SERIES</Card.Header>
+                <Col sm={6}>
+                  <Card bg="danger" text="white">
+                    <Card.Header>SERIES</Card.Header>
 
-                  <Card.Body>
-                    <Card.Title>TOTAL SERIES</Card.Title>
-                    <Card.Text>70</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
+                    <Card.Body>
+                      <Card.Title>TOTAL SERIES</Card.Title>
+                      <Card.Text>70</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
             </Card.Body>
           </Card>
         </Row>
