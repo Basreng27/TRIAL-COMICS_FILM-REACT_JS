@@ -1,10 +1,10 @@
-import React from 'react';
-import imgDev from '../assets/img/dev-react.png';
-import { Nav } from 'react-bootstrap';
-import { SidebarNav } from './SidebarNav';
+import React from "react";
+import imgDev from "../assets/img/dev-react.png";
+import { Nav } from "react-bootstrap";
+import { SidebarNav } from "./SidebarNav";
 
-import navigation from '../config/_nav'
-import { FaChevronLeft } from 'react-icons/fa';
+import navigation from "../config/_nav";
+import { FaChevronLeft } from "react-icons/fa";
 
 function Sidebar() {
   return (

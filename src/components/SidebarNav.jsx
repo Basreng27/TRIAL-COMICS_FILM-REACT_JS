@@ -1,7 +1,7 @@
-import React from 'react';
-import { Badge, Nav, NavDropdown } from 'react-bootstrap';
-import { NavLink, useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import React from "react";
+import { Badge, Nav, NavDropdown } from "react-bootstrap";
+import { NavLink, useLocation } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export const SidebarNav = ({ items }) => {
   const location = useLocation();
@@ -59,7 +59,7 @@ export const SidebarNav = ({ items }) => {
             >
               {navLink(subItem.name, subItem.icon, subItem.badge)}
             </NavDropdown.Item>
-          )
+          ),
         )}
       </NavDropdown>
     );
@@ -69,11 +69,7 @@ export const SidebarNav = ({ items }) => {
     <React.Fragment>
       {items &&
         items.map((item, index) =>
-          item.items ? (
-            navGroup(item, index)
-          ) : (
-            navItem(item, index)
-          )
+          item.items ? navGroup(item, index) : navItem(item, index),
         )}
     </React.Fragment>
   );

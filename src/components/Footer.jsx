@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Footer=()=> {
-  return 'Created @Rayandra WM'
-}
+const Footer = () => {
+  return "Created @Rayandra WM";
+};
 
-export default Footer
+export default Footer;

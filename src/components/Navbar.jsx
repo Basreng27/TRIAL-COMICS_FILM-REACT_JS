@@ -1,7 +1,7 @@
-import React from 'react'
-import { FaBars, FaBell, FaIcons, FaMailBulk } from 'react-icons/fa'
+import React from "react";
+import { FaBars, FaBell, FaIcons, FaMailBulk } from "react-icons/fa";
 
-const Navbar=()=> {
+const Navbar = () => {
   return (
     <div className="custom-navbar">
       <div className="navbar-left">
@@ -22,7 +22,7 @@ const Navbar=()=> {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -5,4 +5,4 @@ import Content from "./Content";
 import Footer from "./Footer";
 import { SidebarNav } from "./SidebarNav";
 
-export { Loading,Sidebar, Navbar, Content, Footer, SidebarNav };
+export { Loading, Sidebar, Navbar, Content, Footer, SidebarNav };

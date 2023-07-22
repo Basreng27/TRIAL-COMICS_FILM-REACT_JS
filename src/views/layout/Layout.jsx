@@ -1,5 +1,5 @@
-import React from 'react';
-import {Content, Footer, Navbar, Sidebar} from '../../components';
+import React from "react";
+import { Content, Footer, Navbar, Sidebar } from "../../components";
 
 const Layout = () => {
   return (
@@ -16,7 +16,7 @@ const Layout = () => {
         <div className="content">
           <Content />
         </div>
-        
+
         <div className="footer">
           <Footer />
         </div>
