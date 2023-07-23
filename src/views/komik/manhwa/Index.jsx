@@ -8,9 +8,29 @@ import {
   Row,
   Table,
 } from "react-bootstrap";
-// import {Modal} from "../../../components/partials/Index.js";
+
+import { ModalForm } from "../../../components/partials/Index";
+
+function FormInput() {
+  return (
+    <>
+      <Row>
+        <Form.Group as={Col} md="6">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Name..." />
+        </Form.Group>
+
+        <Form.Group as={Col} md="6">
+          <Form.Label>Genre</Form.Label>
+          <Form.Control type="text" placeholder="Genre..." />
+        </Form.Group>
+      </Row>
+    </>
+  );
+}
 
 const Index = () => {
+  const [modalShow, setModalShow] = React.useState(false);
   return (
     <div className="body">
       <Container className="g-4">
@@ -49,7 +69,12 @@ const Index = () => {
                     <td>...</td>
                     <td>..</td>
                     <td>
-                      <Button variant="primary">EDIT</Button>
+                      <Button
+                        variant="primary"
+                        onClick={() => setModalShow(true)}
+                      >
+                        EDIT
+                      </Button>
                       <Button variant="danger">DELETE</Button>
                     </td>
                   </tr>
@@ -59,6 +84,13 @@ const Index = () => {
           </Card>
         </Row>
       </Container>
+
+      <ModalForm
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+        formInput={FormInput()}
+        header="MANHWA"
+      />
     </div>
   );
 };

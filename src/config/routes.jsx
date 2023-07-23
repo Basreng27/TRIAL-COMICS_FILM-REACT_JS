@@ -1,7 +1,7 @@
 import React from "react";
 
 const Dashboard = React.lazy(() => import("../views/dashboard/Index"));
-const Manhua = React.lazy(() => import("../views/komik/manhwa/Index"));
+const Manhua = React.lazy(() => import("../views/komik/manhua/Index"));
 const Manga = React.lazy(() => import("../views/komik/manga/Index"));
 const Manhwa = React.lazy(() => import("../views/komik/manhwa/Index"));
 const Movie = React.lazy(() => import("../views/film/movie/Index"));
