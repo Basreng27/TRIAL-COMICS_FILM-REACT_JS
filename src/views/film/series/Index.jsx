@@ -10,6 +10,9 @@ import {
 } from "react-bootstrap";
 
 import { ModalForm } from "../../../components/partials/Index";
+import { useState } from "react";
+import { useEffect } from "react";
+import { getSeries, searchSeries } from "../../../config/api_film";
 
 function FormInput() {
   return (
@@ -29,8 +32,43 @@ function FormInput() {
   );
 }
 
+const SeriesList = ({ series }) => {
+  const [modalShow, setModalShow] = useState(false);
+
+  return series.map((seri, index) => (
+    <tr key={index}>
+      <td>{index + 1}</td>
+      <td>{seri.name}</td>
+      <td>{seri.genre_ids}</td>
+      <td>
+        <Button variant="primary" onClick={() => setModalShow(true)}>
+          EDIT
+        </Button>
+        <Button variant="danger">DELETE</Button>
+      </td>
+    </tr>
+  ));
+};
+
 const Index = () => {
+  const [series, setSeries] = useState([]);
+
+  useEffect(() => {
+    getSeries().then((result) => {
+      console.log(result);
+      setSeries(result);
+    });
+  }, []);
+
   const [modalShow, setModalShow] = React.useState(false);
+
+  const search = async (query) => {
+    if (query.length > 3) {
+      const find = await searchSeries(query);
+      setSeries(find.results);
+    }
+  };
+
   return (
     <div className="body">
       <Container className="g-4">
@@ -42,10 +80,13 @@ const Index = () => {
               <Row className="mb-3">
                 <Form.Group as={Col} md="6">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="tetxt" placeholder="Name..." />
+                  <Form.Control
+                    type="tetxt"
+                    placeholder="Name..."
+                    onChange={({ target }) => search(target.value)}
+                  />
                 </Form.Group>
               </Row>
-              <Button variant="primary">Find</Button>
             </Card.Body>
           </Card>
         </Row>
@@ -64,20 +105,7 @@ const Index = () => {
                 </thead>
 
                 <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>...</td>
-                    <td>..</td>
-                    <td>
-                      <Button
-                        variant="primary"
-                        onClick={() => setModalShow(true)}
-                      >
-                        EDIT
-                      </Button>
-                      <Button variant="danger">DELETE</Button>
-                    </td>
-                  </tr>
+                  <SeriesList series={series} />
                 </tbody>
               </Table>
             </Card.Body>

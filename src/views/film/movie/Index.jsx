@@ -8,7 +8,7 @@ import {
   Row,
   Table,
 } from "react-bootstrap";
-import {getMovie, searchMovie} from '../../../config/api_film'
+import { getMovie, searchMovie } from "../../../config/api_film";
 import { ModalForm } from "../../../components/partials/Index";
 import { useEffect } from "react";
 
@@ -30,7 +30,7 @@ function FormInput() {
   );
 }
 
-// untuk menampilkannya 
+// untuk menampilkannya
 const MovieList = ({ movies }) => {
   const [modalShow, setModalShow] = useState(false);
 
@@ -50,18 +50,18 @@ const MovieList = ({ movies }) => {
 };
 
 const Index = () => {
-  // buat untuk menampung data get movie 
-  const [movies, setMovies] = useState([])
+  // buat untuk menampung data get movie
+  const [movies, setMovies] = useState([]);
 
-// untuk merunning data pertama kali saat di load
-  useEffect(()=>{
+  // untuk merunning data pertama kali saat di load
+  useEffect(() => {
     // disimpan kedalam Movies
     // setMovies(getMovie())
     // Untuk membuat supaya hasilnya tidak promise atau tertahan
-    getMovie().then((result)=>{
-      setMovies(result)
-    })
-  },[])
+    getMovie().then((result) => {
+      setMovies(result);
+    });
+  }, []);
 
   const [modalShow, setModalShow] = React.useState(false);
 
@@ -83,7 +83,11 @@ const Index = () => {
               <Row className="mb-3">
                 <Form.Group as={Col} md="6">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="tetxt" placeholder="Name..." onChange={({target})=>search(target.value)} />
+                  <Form.Control
+                    type="tetxt"
+                    placeholder="Name..."
+                    onChange={({ target }) => search(target.value)}
+                  />
                 </Form.Group>
               </Row>
             </Card.Body>
@@ -104,7 +108,7 @@ const Index = () => {
                 </thead>
 
                 <tbody>
-                <MovieList movies={movies} />
+                  <MovieList movies={movies} />
                 </tbody>
               </Table>
             </Card.Body>
